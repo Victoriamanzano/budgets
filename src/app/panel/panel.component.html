@@ -1,0 +1,37 @@
+<!--panel-->
+<form [formGroup]="panelForm" autocomplete="off" (click)="calculate()">
+  <div class="row">
+    <!--número-pàgines-->
+    <div class="container">
+      <div class="d-flex gap-3 mt-3 align-items-center justify-content-end">
+        <div>
+          <app-modal/>
+        </div>
+        <label for="pages"><b>Número de pàgines:</b> </label>
+        <button type="button" class="btn btnaddbudget m-0 p-0" (click)="downPages()">
+          -
+        </button>
+        <input class="inputs" type="number" id="pages"
+        formControlName="nPags" (keydown.enter)="$event.preventDefault()">
+        <button type="button" class="btn btnaddbudget m-0 p-0" (click)="upPages()">
+          +
+        </button>
+      </div>
+    </div>
+<!--número-llenguatges-->
+    <div class="d-flex gap-3  align-items-center justify-content-end">
+      <div>
+        <app-modal/>
+      </div>
+      <label for="languages"><b>Número de llenguatges:</b></label>
+      <button type="button" class="btn btnaddbudget m-0 p-0" (click)="downLanguages()">
+        -
+      </button>
+      <input class="inputs" type="number" id="languages"
+      formControlName="nLangs" (keydown.enter)="$event.preventDefault()" >
+      <button type="button" class="btn btnaddbudget m-0 p-0" (click)="upLanguages()">
+        +
+      </button>
+    </div>
+  </div>
+</form>

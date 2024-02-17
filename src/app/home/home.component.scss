@@ -1,0 +1,19 @@
+.container{
+  margin-top: 40px;
+  max-width: 850px;
+}
+
+#box01:checked {
+  background-color: green;
+}
+#box02:checked {
+ background-color: green;
+}
+#box03:checked {
+ background-color: green;
+}
+.border-success {
+  border-color: green;
+  border-width: 2px;
+  border-style: solid;
+}

@@ -1,0 +1,7 @@
+.topbanner {
+  background-image: url("/assets/img/minrose.png");
+  background-size: cover;
+  height: 160px;
+  max-width: 1100px;
+  border-radius: 20px;
+}/*# sourceMappingURL=welcome.component.css.map */

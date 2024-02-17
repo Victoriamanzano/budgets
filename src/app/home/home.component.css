@@ -1,0 +1,20 @@
+.card-offer {
+  background-size: cover;
+  height: 160px;
+  max-width: 1100px;
+  border-radius: 20px;
+}
+
+.card-offer3 {
+  background-size: cover;
+  height: 220px;
+  max-width: 1100px;
+  border-radius: 20px;
+}
+
+.card-offer4 {
+  background-size: cover;
+  height: 180px;
+  max-width: 1100px;
+  border-radius: 20px;
+}/*# sourceMappingURL=home.component.css.map */

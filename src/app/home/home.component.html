@@ -1,0 +1,81 @@
+<!--welcome-->
+<header>
+  <app-welcome />
+</header>
+<!--home-->
+<div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <form [formGroup]="homeForm">
+          <!--card-1-->
+          <div class="row">
+            <div class="col-12 greenCards shadow rounded-4 p-3 p-md-5 mt-3" [class.border-success]="homeForm.get('bA01')?.value">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <h3 class="fw-bold">Seo</h3>
+                  <p>Programació d'una web responsive completa</p>
+                </div>
+                <div class="offerPrice">
+                  <span class="fs-3 fw-bold">300<i class="fa-xs fa-solid fa-euro-sign"></i></span>
+                </div>
+                <div class="d-flex gap-2">
+                  <input class="form-check-input" type="checkbox" id="box01" formControlName="bA01"  (change)="changeBorderColor($event, 'box01')">
+                  <label class="form-check-label" for="box01">Afegir</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--card-2-->
+          <div class="row">
+            <div class=" col-12 greenCards shadow rounded-4 p-3 p-md-5 mt-3" [class.border-success]="homeForm.get('bA02')?.value">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="title-card">
+                  <h3 class="fw-bold">Ads</h3>
+                  <p>Programació d'una web responsive completa</p>
+                </div>
+                <div class="offerPrice">
+                  <span class="fs-3 fw-bold">400<i class="fa-xs fa-solid fa-euro-sign"></i></span>
+                </div>
+                <div class="d-flex gap-2">
+                  <input class="form-check-input" type="checkbox" id="box02" formControlName="bA02" (change)="changeBorderColor($event, 'box02')">
+                  <label class="form-check-label" for="box02">Afegir</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--card-3-->
+          <div class="row">
+            <div class="col-12 greenCards shadow rounded-4 p-3 p-md-5 mt-3" [class.border-success]="homeForm.get('bA03')?.value">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="title-card">
+                  <h3 class="fw-bold">Web</h3>
+                  <p>Programació d'una web responsive completa</p>
+                </div>
+                <div class="offerPrice">
+                  <span class="fs-3 fw-bold">500<i class="fa-xs fa-solid fa-euro-sign"></i></span>
+                </div>
+                <div class="d-flex gap-2">
+                  <input class="form-check-input" type="checkbox" id="box03" formControlName="bA03" (change)="changeBorderColor($event, 'box01')">
+                  <label class="form-check-label" for="box03">Afegir</label>
+                </div>
+              </div>
+              @if(homeForm.get('bA03')?.value){
+              <div>
+                <app-panel (costPages)="costTotalCost($event)" />
+              </div>
+              }
+            </div>
+          </div>
+          <!--Pressupost-total-->
+          <div class="mt-4">
+            <p class="fs-4 d-flex justify-content-end gap-3">
+              <b>Pressupost total: </b>
+               <b>{{totalCost}}<i class="fa-xs fa-solid fa-euro-sign fa-xs"></i></b>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
