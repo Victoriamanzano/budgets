@@ -3,17 +3,27 @@
   max-width: 850px;
 }
 
+.greenCards {
+
+  background-color: rgba(255, 252, 252, 0.87);
+  border-radius: 20px;
+
+}
+
 #box01:checked {
-  background-color: green;
+  background-color: rgb(35, 231, 205);
 }
 #box02:checked {
- background-color: green;
+ background-color: rgb(35, 231, 205);
 }
 #box03:checked {
- background-color: green;
+ background-color: rgb(35, 231, 205);
 }
 .border-success {
-  border-color: green;
+  border-color: rgb(35, 231, 205);
   border-width: 2px;
   border-style: solid;
 }
+
+
+

@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"panel.component.css"}
+{"version":3,"sources":["panel.component.scss","panel.component.css"],"names":[],"mappings":"AAAA;EACE,gCAAA;EACA,eAAA;EACA,WAAA;EACA,YAAA;EACA,kBAAA;ACCF;;ADCA;EACE,gCAAA;EACA,kBAAA;EACA,WAAA;EACA,WAAA;EACA,YAAA;ACEF;;ADEA;EACE,+BAAA;ACCF","file":"panel.component.css"}
