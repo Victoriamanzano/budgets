@@ -15,4 +15,7 @@ export class NgbdModalOptions {
 	openModalInfo(modalInfo: TemplateRef<any>) {
 		this.modalService.open(modalInfo, { centered: true });
 	}
+  closeModal() {
+    this.modalService.dismissAll();
+  }
 }

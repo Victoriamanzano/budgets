@@ -7,4 +7,10 @@
   height: 18px;
   padding: 0;
   margin-top: 10px;
+}
+
+.close {
+  background: white;
+  border: none;
+  border-radius: 3px;
 }/*# sourceMappingURL=modal.component.css.map */
