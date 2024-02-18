@@ -12,4 +12,3 @@ export class BudgetService {
     return nPag * nLang * 30;
   }
 }
-
