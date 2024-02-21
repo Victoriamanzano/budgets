@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, ViewChild, viewChild } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { WelcomeComponent } from '../welcome/welcome.component';
 import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { PanelComponent } from '../panel/panel.component';
